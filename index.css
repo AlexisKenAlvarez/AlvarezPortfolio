@@ -10,7 +10,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #091C23;
+  background-color: #003459;
+  overflow-y: hidden;
 }
 
 nav {
@@ -18,6 +19,23 @@ nav {
   height: 5rem;
   margin-top: 4rem;
   position: relative;
+}
+
+.barsContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.barsContainer > div {
+  background-color: #091C23;
+  width: 33.33%;
+  height: 100%;
 }
 
 .navContainer {
@@ -132,6 +150,8 @@ nav {
 
 .imgSoc:hover {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (min-width: 543px) {
@@ -564,7 +584,7 @@ nav {
     font-family: "Poppins", sans-serif;
     position: absolute;
     left: 24rem;
-    width: 40rem;
+    width: 44rem;
     top: 11rem;
   }
   .mainContainer .bio h1 {

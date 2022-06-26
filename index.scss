@@ -16,7 +16,8 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    background-color: $mainColor;
+    background-color: #003459;
+    overflow-y: hidden;
 }
 
 nav {
@@ -24,6 +25,22 @@ nav {
     height: 5rem;
     margin-top: 4rem;
     position: relative;
+}
+
+.barsContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+
+    & > div {
+        background-color: $mainColor;
+        width: 33.33%;
+        height: 100%;
+    }
+
 }
 
 .navContainer {
@@ -131,6 +148,7 @@ nav {
 
 .imgSoc:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 
@@ -606,7 +624,7 @@ nav {
             font-family: $poppins;
             position: absolute;
             left: 24rem;
-            width: 40rem;
+            width: 44rem;
             top: 11rem;
 
            
