@@ -185,7 +185,7 @@ nav {
 }
 
 .projectsParent {
-  height: 260vh;
+  height: 105rem;
   width: 100%;
   background-color: #091C23;
   font-family: "Poppins", sans-serif;
@@ -317,14 +317,14 @@ nav {
 
 .skillsParent {
   width: 100%;
-  height: 140vh;
+  height: 50rem;
   color: white;
   font-family: "Poppins", sans-serif;
   position: relative;
 }
 
 .skillsParent .skillsOver {
-  font-size: 5.5rem;
+  font-size: 5rem;
   margin-top: 3rem;
   color: transparent;
   -webkit-text-stroke-width: 1.5px;
