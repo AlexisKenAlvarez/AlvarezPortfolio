@@ -1,4 +1,8 @@
+
+
 gsap.registerPlugin(ScrollTrigger);
+
+
 
 var tl = gsap.timeline({ defaults: { opacity: 0, duration: 2, y: 1000, ease: 'Power4.easeInOut' } });
 var iconTL = gsap.timeline({ defaults: { opacity: 0, duration: 2, y: 100, ease: 'circ.easeInOut' } });
@@ -24,6 +28,38 @@ tl.from('.div1', {})
     tl.add(headers)
     tl.add(iconTL);
 
-gsap.to(body, {
-    backgroundColor: "#091C23"
+var paws = document.querySelector('.paws');
+var pawsLogo = document.querySelector('.pLogo');
+
+paws.addEventListener('mouseover', ()=>{
+    pawsLogo.style.transform = 'scale(1.3)';
 })
+
+paws.addEventListener('mouseout', ()=>{
+    pawsLogo.style.transform = 'scale(1)';
+})
+
+var roblox = document.querySelector('.roblox');
+var robloxLogo = document.querySelector('.rLogo');
+
+roblox.addEventListener('mouseover', ()=>{
+    robloxLogo.style.transform = 'scale(1.2)';
+})
+
+roblox.addEventListener('mouseout', ()=>{
+    robloxLogo.style.transform = 'scale(1)';
+})
+
+
+var tic = document.querySelector('.tic');
+var ticLogo = document.querySelector('.tLogo');
+
+tic.addEventListener('mouseover', ()=>{
+    ticLogo.style.transform = 'scale(1.3)';
+})
+
+tic.addEventListener('mouseout', ()=>{
+    ticLogo.style.transform = 'scale(1)';
+})
+
+
