@@ -690,9 +690,9 @@ nav {
   }
   .mainContainer .myImage {
     display: block;
-    width: 26rem;
+    width: 23rem;
     margin-top: 4rem;
-    margin-left: -3rem;
+    margin-left: -2rem;
   }
   .soc {
     display: -webkit-box;
@@ -714,6 +714,7 @@ nav {
     background-color: white;
   }
   .socMeds {
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
