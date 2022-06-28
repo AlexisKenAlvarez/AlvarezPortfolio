@@ -93,7 +93,6 @@ nav {
   margin: 0 auto;
   display: block;
   width: 20rem;
-  overflow-x: hidden !important;
 }
 
 .soc {
@@ -585,7 +584,7 @@ nav {
   .mainContainer .myImage {
     margin: 0 auto;
     display: block;
-    width: 23rem;
+    width: 22rem;
   }
   .soc {
     display: -webkit-box;
@@ -666,7 +665,7 @@ nav {
   }
   .mainContainer .bio h1 {
     margin-top: 5rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: -1.5rem;
     text-transform: uppercase;
   }
@@ -690,9 +689,8 @@ nav {
   }
   .mainContainer .myImage {
     display: block;
-    width: 23rem;
+    width: 22rem;
     margin-top: 4rem;
-    margin-left: -2rem;
   }
   .soc {
     display: -webkit-box;
