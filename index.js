@@ -23,3 +23,7 @@ tl.from('.div1', {})
     .from('.div3', {}, '-=1.7')
     tl.add(headers)
     tl.add(iconTL);
+
+gsap.to(body, {
+    backgroundColor: "#091C23"
+})
