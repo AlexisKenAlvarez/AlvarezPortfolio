@@ -93,6 +93,7 @@ nav {
   margin: 0 auto;
   display: block;
   width: 20rem;
+  overflow-x: hidden !important;
 }
 
 .soc {
@@ -534,6 +535,112 @@ nav {
   width: 3.7rem;
   height: 0.3rem;
   background-color: white;
+}
+
+@media screen and (max-width: 542px) and (min-height: 750px) {
+  .navContainer {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .myLogo {
+    width: 4.7rem;
+    cursor: pointer;
+  }
+  .hero {
+    width: 100%;
+    height: 78vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3rem 1fr;
+        grid-template-columns: 3rem 1fr;
+  }
+  .mainContainer .bio {
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .mainContainer .bio h1 {
+    font-size: 2rem;
+    margin-left: -1.5rem;
+    text-transform: uppercase;
+  }
+  .mainContainer .bio p {
+    font-weight: 200;
+    margin-top: -1.7rem;
+    font-size: 0.8rem;
+    font-family: "Lekton", sans-serif;
+    margin-left: -1.5rem;
+  }
+  .mainContainer .bio .download {
+    background-color: #0B0F23;
+    font-size: 0.5rem;
+    width: 6rem;
+    height: 1.5rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    border-radius: 15px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+  }
+  .mainContainer .myImage {
+    margin: 0 auto;
+    display: block;
+    width: 25rem;
+    margin-right: 2rem;
+  }
+  .soc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0.5rem;
+  }
+  .soc .whiteLine {
+    height: 15rem;
+    width: 0.13rem;
+    margin-top: 7rem;
+    background-color: white;
+  }
+  .socMeds {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0.5rem;
+  }
+  .socMeds .socLink {
+    text-decoration: none;
+    margin: 0 auto;
+    margin-bottom: 0.4rem;
+  }
+  .imgSoc {
+    width: 1.7rem;
+    -webkit-filter: invert(99%) sepia(35%) saturate(285%) hue-rotate(207deg) brightness(119%) contrast(100%);
+            filter: invert(99%) sepia(35%) saturate(285%) hue-rotate(207deg) brightness(119%) contrast(100%);
+    opacity: 0.4;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .imgSoc:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 
 @media screen and (min-width: 543px) {
