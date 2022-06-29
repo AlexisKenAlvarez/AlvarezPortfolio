@@ -84,17 +84,6 @@ gsap.from('.skillsOver', {
     }
 })
 
-gsap.from('.projOver', {
-    opacity: 0,
-    x: -300,
-    duration: 3,
-    scrollTrigger: {
-        trigger: '.projOver',
-        scrub: 1,
-        end: 'bottom 50%'
-    }
-})
-
 
 var prBox = document.querySelectorAll('.p');
 
@@ -129,6 +118,34 @@ gsap.from(skBox, {
         toggleActions: "restart none none reset"
     }
 })
+
+
+
+var footImage = document.querySelector('.footerLogo');
+
+footImage.addEventListener('click', ()=> {
+    document.querySelector('.barsContainer').scrollIntoView({
+        behavior : 'smooth'
+    })
+})
+
+document.querySelectorAll('.aLink').forEach(function(button) {
+    button.addEventListener('click', removehash);
+})
+
+function removehash(){
+    setTimeout(function(){
+        history.replaceState("", document.title, window.location.pathname);
+    }, 1);
+}
+
+if ( window.history.replaceState ) {
+    window.history.replaceState( null, null, window.location.href );
+}
+
+
+
+
 
 
 

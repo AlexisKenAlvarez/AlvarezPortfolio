@@ -12,20 +12,20 @@
 <body>
 
     <!-- BACKGROUND -->
-    <div class="barsContainer">
+    <div class="barsContainer" id="hero">
         <div class="div1"></div>
         <div class="div2"></div>
         <div class="div3"></div>
     </div>
 
-    <!-- NAV BAR -->
+    
     <nav>
-        <div class="navContainer">
+        <div class="navContainer" >
             <img src="img/logo-aki-Copy.webp" alt="Logo" class="myLogo">
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+
     <section>
         <div class="hero">
             <div class="soc">
@@ -52,10 +52,10 @@
         </div>
     </section>
 
-    <!-- ABOUT -->
+
     <section>
         <div class="aboutParent">
-            <div class="aboutContainer">
+            <div class="aboutContainer" id="about">
                 <h1 class="aboutOverlay">
                     ABOUT ME
                 </h1>
@@ -66,10 +66,10 @@
         </div>
     </section>
 
-    <!-- PROJECTS -->
+
     <section>
         <div class="projectsParent">
-            <h1 class="projOver">PROJECTS</h1>
+            <h1 class="projOver"  id="projects">PROJECTS</h1>
             <div class="projectsDiv">
                 <div class="projectsTitle">
                     <h1 class="projTitle">PROJECTS</h1>
@@ -104,7 +104,7 @@
 
     <section>
         <div class="skillsParent">
-            <h1 class="skillsOver">MY SKILLS</h1>
+            <h1 class="skillsOver" id="skills">MY SKILLS</h1>
 
             <div class="skillsTitleDiv">
                 <h2 class="skillsTitle">
@@ -145,18 +145,51 @@
         </div>
     </section>
 
-    <!-- <footer>
+    <footer>
         <div class="footerParent">
             <div class="footerDiv">
                 <div class="upper">
+                    <img src="img/akiLogoFooter.svg" alt="Logo" class="footerLogo">
+                    <div class="footerNav">
+                        <h1>ALVAREZ</h1>
+                        <div class="footerNavLink">
+                            <a href="#hero" class="aLink homeFt"><p class="footerText">Home</p></a>
+                            <a href="#projects" class="aLink"><p class="footerText">Projects</p></a>
+                            <a href="#about" class="aLink"><p class="footerText">About</p></a>
+                            <a href="#skills" class="aLink"><p class="footerText">Skills</p></a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <form action="" method="post" class="myForm">
+                            <div class="name">
+                                <p>NAME</p>
+                                <input type="text" class="nameBox" id="nameBox">
+                            </div>
 
+                            <div class="message">
+                                <p>MESSAGE</p>
+                                <textarea type="textarea" class="msgBox" id="msgBox" name="message"></textarea>
+                            </div>
+                            <input type="submit" name="submit" value="SEND" class="submitBtn">
+                        </form>
+                    </div>
                 </div>
                 <div class="lower">
+                    <div class="footerSoc">
+                        <a href="https://www.facebook.com/alvarez.aki/" class="footerA"  target="_blank"><img src="img/socPort/001-facebook.svg" alt="Facebook" class="footerSocImg"></a>
+
+                        <a href="https://www.instagram.com/aki.alvarez/" class="footerA"  target="_blank"><img src="img/socPort/011-instagram.svg" alt="Instagram" class="footerSocImg"></a>
+
+                        <a href="https://www.linkedin.com/in/alexiskenalvarez/" class="footerA" target="_blank"><img src="img/socPort/010-linkedin.svg" alt="linkedin" class="footerSocImg"></a>
+
+                        <a href="https://github.com/AlexisKenAlvarez" class="footerA"  target="_blank"><img src="img/socPort/icons8-github-60.svg" alt="github" class="footerSocImg"></a>
+                    </div>
+                    <p>© All Rights Reserved.</p>
 
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>

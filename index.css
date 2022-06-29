@@ -5,12 +5,37 @@
           box-sizing: border-box;
 }
 
-body {
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #091C23;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  z-index: 9999;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4b4b;
+}
+
+body, html {
   width: 100%;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
   background-color: #091C23;
+  min-width: -webkit-fit-content !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -25,7 +50,7 @@ nav {
   top: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,6 +253,8 @@ nav {
   margin-bottom: 6rem;
   font-weight: 300;
   max-width: 20rem;
+  z-index: 3;
+  position: relative;
 }
 
 .projectsParent .projectsDiv .projectsItems {
@@ -565,27 +592,198 @@ nav {
 
 .footerParent {
   width: 100%;
-  height: 80rem;
-  border: 1px solid red;
+  height: 54rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #171F22;
 }
 
 .footerParent .footerDiv {
-  border: 1px solid red;
   max-width: 90%;
   margin: 0 auto;
   height: 100%;
 }
 
 .footerParent .footerDiv .upper {
-  border: 1px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 60rem;
+  height: 47rem;
+}
+
+.footerParent .footerDiv .upper .footerLogo {
+  margin: 0 auto;
+  width: 10rem;
+  margin-top: 5rem !important;
+  cursor: pointer;
+}
+
+.footerParent .footerDiv .upper .footerNav {
+  width: 20.5rem;
+  margin: 0 auto;
+}
+
+.footerParent .footerDiv .upper .footerNav > h1 {
+  text-align: center;
+}
+
+.footerParent .footerDiv .upper .footerNav .footerNavLink {
+  margin-top: 0rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5rem 5rem;
+      grid-template-columns: 5rem 5rem;
+  -ms-grid-rows: 2rem 2rem;
+      grid-template-rows: 2rem 2rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.footerParent .footerDiv .upper .footerNav .footerNavLink > a {
+  opacity: 0.7;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.footerParent .footerDiv .upper .contact {
+  width: 21rem;
+  margin: 0 auto;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .name {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .name > p {
+  font-weight: 700;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .name .nameBox {
+  background-color: transparent;
+  text-decoration: none;
+  outline: 1.5px solid white;
+  color: white;
+  height: 1.7rem;
+  width: 17.8rem;
+  margin-top: -0.7rem;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .message {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .message > p {
+  font-weight: 700;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .message .msgBox {
+  background-color: transparent;
+  text-decoration: none;
+  outline: 1.5px solid white;
+  color: white;
+  height: 6.7rem;
+  width: 17.8rem;
+  margin-top: -0.7rem;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+.footerParent .footerDiv .upper .contact .myForm .submitBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: 1.5px solid white;
+  width: 4.5rem;
+  height: 1.7rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .footerParent .footerDiv .lower {
   width: 100%;
-  border: 1px solid yellow;
-  height: 10rem;
+  height: 5rem;
+}
+
+.footerParent .footerDiv .lower .footerSoc {
+  width: 12rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerParent .footerDiv .lower > p {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.aLink:hover {
+  opacity: 1 !important;
+  font-weight: 400;
+}
+
+.footerSocImg {
+  width: 2rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  -webkit-filter: invert(99%) sepia(35%) saturate(285%) hue-rotate(207deg) brightness(119%) contrast(100%);
+          filter: invert(99%) sepia(35%) saturate(285%) hue-rotate(207deg) brightness(119%) contrast(100%);
+  opacity: 0.4;
+}
+
+.footerSocImg:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.submitBtn:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.aLink {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media screen and (max-width: 542px) and (min-height: 750px) {
@@ -1577,6 +1775,160 @@ nav {
     height: 0.4rem;
     background-color: white;
   }
+  .footerParent {
+    width: 100%;
+    height: 40rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .footerParent .footerDiv {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .footerParent .footerDiv .upper {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 34rem;
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 12rem 20rem;
+        grid-template-rows: 12rem 20rem;
+  }
+  .footerParent .footerDiv .upper .footerLogo {
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1/2;
+  }
+  .footerParent .footerDiv .upper .footerNav {
+    width: 14rem;
+    margin: 0 auto;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: 2/1;
+  }
+  .footerParent .footerDiv .upper .footerNav > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .footerParent .footerDiv .upper .footerNav .footerNavLink {
+    margin-top: 0rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5rem 5rem;
+        grid-template-columns: 5rem 5rem;
+    -ms-grid-rows: 2rem 2rem;
+        grid-template-rows: 2rem 2rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    row-gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .footerParent .footerDiv .upper .footerNav .footerNavLink > a {
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerParent .footerDiv .upper .contact {
+    width: 21rem;
+    margin: 0 auto;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: 2/3;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name {
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name > p {
+    font-weight: 700;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name .nameBox {
+    background-color: transparent;
+    text-decoration: none;
+    outline: 1.5px solid white;
+    color: white;
+    height: 1.7rem;
+    width: 17.8rem;
+    margin-top: -0.7rem;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message {
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message > p {
+    font-weight: 700;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message .msgBox {
+    background-color: transparent;
+    text-decoration: none;
+    outline: 1.5px solid white;
+    color: white;
+    height: 6.7rem;
+    width: 17.8rem;
+    margin-top: -0.7rem;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .submitBtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: 1.5px solid white;
+    width: 4.5rem;
+    height: 1.7rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .footerParent .footerDiv .lower {
+    width: 100%;
+    height: 5rem;
+  }
+  .footerParent .footerDiv .lower .footerSoc {
+    width: 13rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footerParent .footerDiv .lower > p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
+  }
 }
 
 @media screen and (min-width: 954px) {
@@ -2225,6 +2577,162 @@ nav {
     width: 5.5rem;
     height: 0.4rem;
     background-color: white;
+  }
+  .footerParent {
+    width: 100%;
+    height: 28rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .footerParent .footerDiv {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .footerParent .footerDiv .upper {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 22rem;
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 20rem;
+        grid-template-rows: 20rem;
+  }
+  .footerParent .footerDiv .upper .footerLogo {
+    margin: 0 auto;
+    display: block;
+    width: 10rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: 1/2;
+  }
+  .footerParent .footerDiv .upper .footerNav {
+    width: 14rem;
+    margin: 0 auto;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: 1/1;
+    margin-top: 5rem !important;
+  }
+  .footerParent .footerDiv .upper .footerNav > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .footerParent .footerDiv .upper .footerNav .footerNavLink {
+    margin-top: 0rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5rem 5rem;
+        grid-template-columns: 5rem 5rem;
+    -ms-grid-rows: 2rem 2rem;
+        grid-template-rows: 2rem 2rem;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    row-gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  .footerParent .footerDiv .upper .footerNav .footerNavLink > a {
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerParent .footerDiv .upper .contact {
+    margin-top: 5rem !important;
+    width: 21rem;
+    margin: 0 auto;
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: 1/3;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name {
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name > p {
+    font-weight: 700;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .name .nameBox {
+    background-color: transparent;
+    text-decoration: none;
+    outline: 1.5px solid white;
+    color: white;
+    height: 1.7rem;
+    width: 17.8rem;
+    margin-top: -0.7rem;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message {
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message > p {
+    font-weight: 700;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .message .msgBox {
+    background-color: transparent;
+    text-decoration: none;
+    outline: 1.5px solid white;
+    color: white;
+    height: 6.7rem;
+    width: 17.8rem;
+    margin-top: -0.7rem;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+  }
+  .footerParent .footerDiv .upper .contact .myForm .submitBtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: 1.5px solid white;
+    width: 4.5rem;
+    height: 1.7rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .footerParent .footerDiv .lower {
+    width: 100%;
+    height: 5rem;
+  }
+  .footerParent .footerDiv .lower .footerSoc {
+    width: 13rem;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footerParent .footerDiv .lower > p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-weight: 300;
   }
 }
 
