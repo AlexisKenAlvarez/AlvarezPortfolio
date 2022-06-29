@@ -62,4 +62,74 @@ tic.addEventListener('mouseout', ()=>{
     ticLogo.style.transform = 'scale(1)';
 })
 
+gsap.from('.aboutOverlay', {
+    opacity: 0,
+    x: -300,
+    duration: 3,
+    scrollTrigger: {
+        trigger: '.aboutOverlay',
+        scrub: 1,
+        end: 'bottom 50%'
+    }
+})
+
+gsap.from('.skillsOver', {
+    opacity: 0,
+    x: -300,
+    duration: 3,
+    scrollTrigger: {
+        trigger: '.skillsOver',
+        scrub: 1,
+        end: 'bottom 50%'
+    }
+})
+
+gsap.from('.projOver', {
+    opacity: 0,
+    x: -300,
+    duration: 3,
+    scrollTrigger: {
+        trigger: '.projOver',
+        scrub: 1,
+        end: 'bottom 50%'
+    }
+})
+
+
+var prBox = document.querySelectorAll('.p');
+
+
+gsap.from(prBox, {
+    ease: Power4.inOut,
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    stagger: 0.2,
+    
+
+    scrollTrigger: {
+        trigger: prBox,
+        toggleActions: "restart none none reset"
+    }
+})
+
+
+var skBox = document.querySelectorAll('.s');
+
+gsap.from(skBox, {
+    ease: Power4.inOut,
+    opacity: 0,
+    y: 100,
+    duration: 1,
+    stagger: 0.2,
+    
+
+    scrollTrigger: {
+        trigger: skBox,
+        toggleActions: "restart none none reset"
+    }
+})
+
+
+
 

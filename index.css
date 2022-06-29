@@ -192,6 +192,20 @@ nav {
   position: relative;
 }
 
+.projectsParent > h1 {
+  position: absolute;
+  font-size: 4rem;
+  top: -1.5rem;
+  margin: 0 auto 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #27373d;
+}
+
 .projectsParent .projectsDiv {
   margin: 0 auto;
   max-width: 90rem;
@@ -201,16 +215,16 @@ nav {
 }
 
 .projectsParent .projectsDiv .projectsTitle .projTitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   position: relative;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .projectsParent .projectsDiv .projectsTitle > p {
   text-align: center;
   margin: 0 auto;
-  margin-top: -2.5rem;
+  margin-top: -2rem;
   margin-bottom: 6rem;
   font-weight: 300;
   max-width: 20rem;
@@ -234,13 +248,12 @@ nav {
   background-color: #2F3639;
   position: relative;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .projectsParent .projectsDiv .projectsItems .paws {
   width: 18.5rem;
   text-align: center;
-  -webkit-transition: 0.1s all ease-in-out;
-  transition: 0.1s all ease-in-out;
 }
 
 .projectsParent .projectsDiv .projectsItems .paws .pLogo {
@@ -249,9 +262,9 @@ nav {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: -3rem;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
+  top: -3rem;
 }
 
 .projectsParent .projectsDiv .projectsItems .paws > h1 {
@@ -267,8 +280,6 @@ nav {
 .projectsParent .projectsDiv .projectsItems .roblox {
   width: 18.5rem;
   text-align: center;
-  -webkit-transition: 0.1s all ease-in-out;
-  transition: 0.1s all ease-in-out;
 }
 
 .projectsParent .projectsDiv .projectsItems .roblox .rLogo {
@@ -295,8 +306,6 @@ nav {
 .projectsParent .projectsDiv .projectsItems .tic {
   width: 18.5rem;
   text-align: center;
-  -webkit-transition: 0.1s all ease-in-out;
-  transition: 0.1s all ease-in-out;
 }
 
 .projectsParent .projectsDiv .projectsItems .tic .tLogo {
@@ -327,7 +336,8 @@ nav {
 .projTitle:before {
   content: '';
   position: absolute;
-  width: 6rem;
+  top: 0.2rem;
+  width: 5rem;
   height: 0.3rem;
   background-color: white;
 }
@@ -551,6 +561,31 @@ nav {
   width: 3.7rem;
   height: 0.3rem;
   background-color: white;
+}
+
+.footerParent {
+  width: 100%;
+  height: 80rem;
+  border: 1px solid red;
+}
+
+.footerParent .footerDiv {
+  border: 1px solid red;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footerParent .footerDiv .upper {
+  border: 1px solid yellow;
+  width: 100%;
+  height: 60rem;
+}
+
+.footerParent .footerDiv .lower {
+  width: 100%;
+  border: 1px solid yellow;
+  height: 10rem;
 }
 
 @media screen and (max-width: 542px) and (min-height: 750px) {
@@ -873,6 +908,132 @@ nav {
     margin-right: auto;
     margin-top: -3rem;
   }
+  .projectsParent {
+    height: 105rem;
+    width: 100%;
+    background-color: #091C23;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+  .projectsParent > h1 {
+    position: absolute;
+    font-size: 6rem;
+    top: -3rem;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #27373d;
+  }
+  .projectsParent .projectsDiv {
+    margin: 0 auto;
+    max-width: 90rem;
+    height: 78%;
+    width: 100%;
+    color: white;
+  }
+  .projectsParent .projectsDiv .projectsTitle .projTitle {
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    margin-top: 4rem;
+  }
+  .projectsParent .projectsDiv .projectsTitle > p {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -2rem;
+    margin-bottom: 6rem;
+    font-weight: 300;
+    max-width: 20rem;
+  }
+  .projectsParent .projectsDiv .projectsItems {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 21.5rem 21.5rem 21.5rem;
+        grid-template-rows: 21.5rem 21.5rem 21.5rem;
+    row-gap: 8rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .projectsParent .projectsDiv .projectsItems > div {
+    background-color: #2F3639;
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .projectsParent .projectsDiv .projectsItems .paws {
+    width: 18.5rem;
+    text-align: center;
+  }
+  .projectsParent .projectsDiv .projectsItems .paws .pLogo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    top: -3rem;
+  }
+  .projectsParent .projectsDiv .projectsItems .paws > h1 {
+    margin-top: 3rem;
+    color: #F4BA84;
+  }
+  .projectsParent .projectsDiv .projectsItems .paws > p {
+    font-size: 0.8rem;
+    margin: 1.4rem 2rem 0 2rem;
+  }
+  .projectsParent .projectsDiv .projectsItems .roblox {
+    width: 18.5rem;
+    text-align: center;
+  }
+  .projectsParent .projectsDiv .projectsItems .roblox .rLogo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    top: -3.2rem;
+  }
+  .projectsParent .projectsDiv .projectsItems .roblox > h1 {
+    margin-top: 3rem;
+    color: #0085FF;
+  }
+  .projectsParent .projectsDiv .projectsItems .roblox > p {
+    font-size: 0.8rem;
+    margin: 1.4rem 2rem 0 2rem;
+  }
+  .projectsParent .projectsDiv .projectsItems .tic {
+    width: 18.5rem;
+    text-align: center;
+  }
+  .projectsParent .projectsDiv .projectsItems .tic .tLogo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -3.2rem;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+  }
+  .projectsParent .projectsDiv .projectsItems .tic > h1 {
+    margin-top: 3rem;
+    color: #A5A4A3;
+  }
+  .projectsParent .projectsDiv .projectsItems .tic > p {
+    font-size: 0.8rem;
+    margin: 1.4rem 2rem 0 2rem;
+  }
   .skillsParent {
     width: 100%;
     height: 140vh;
@@ -1127,6 +1288,19 @@ nav {
     background-color: #091C23;
     font-family: "Poppins", sans-serif;
     position: relative;
+  }
+  .projectsParent > h1 {
+    position: absolute;
+    font-size: 9.5rem;
+    top: -4rem;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #27373d;
   }
   .projectsParent .projectsDiv {
     margin: 0 auto;
@@ -1757,6 +1931,19 @@ nav {
     background-color: #091C23;
     font-family: "Poppins", sans-serif;
     position: relative;
+  }
+  .projectsParent > h1 {
+    position: absolute;
+    font-size: 12rem;
+    top: -6rem;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #27373d;
   }
   .projectsParent .projectsDiv {
     margin: 0 auto;
@@ -2687,6 +2874,19 @@ nav {
     background-color: #091C23;
     font-family: "Poppins", sans-serif;
     position: relative;
+  }
+  .projectsParent > h1 {
+    position: absolute;
+    font-size: 16rem;
+    top: -8rem;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #27373d;
   }
   .projectsParent .projectsDiv {
     margin: 0 auto;
